@@ -1,104 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Planificador Personal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mi Planificador Personal</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <header id="inicio">
+      <h1>Mi Planificador Personal</h1>
+      <p>
+        Organiza tu tiempo de manera efectiva con este planificador personal.
+        Establece objetivos, programa actividades y mantén un seguimiento de tus
+        tareas diarias.
+      </p>
+      <nav>
+        <a href="#tareas">Tarea Programada</a>
+        <a href="#horarios">Horario Establecido</a>
+      </nav>
+    </header>
 
-<body>
-	<header id="inicio">
-		<h1>Mi Planificador Personal</h1>
-		<p>Organiza tu tiempo de manera efectiva con este planificador personal. Establece objetivos, programa actividades y
-			mantén un seguimiento de tus tareas diarias.</p>
-		<nav>
-			<a href="#tareas">Tarea Programada</a>
-			<a href="#horarios">Horario Establecido</a>
-		</nav>
-	</header>
+    <main>
+      <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>
+          Comienza a organizar tu tiempo de manera efectiva siguiendo estos
+          pasos:
+        </p>
+        <ul>
+          <li>Establecer tus objetivos principales</li>
+          <li>Organizar tus actividades diarias</li>
+          <li>Visualizar tu semana de manera clara</li>
+        </ul>
+      </section>
 
-	<main>
-		<section id="introduccion">
-			<h2>Introducción</h2>
-			<p>Comienza a organizar tu tiempo de manera efectiva siguiendo estos pasos:</p>
-			<ul>
-				<li>Establecer tus objetivos principales</li>
-				<li>Organizar tus actividades diarias</li>
-				<li>Visualizar tu semana de manera clara</li>
-			</ul>
-		</section>
+      <section id="objetivos">
+        <h2>Objetivos de la Semana</h2>
+        <ol>
+          <li>
+            Estudio
+            <ul>
+              <li>Repasar HTML y CSS</li>
+              <li>Completar ejercicios prácticos</li>
+            </ul>
+          </li>
+          <li>
+            Salud
+            <ul>
+              <li>Realizar 30 minutos diarios de práctica</li>
+              <li>Seguir una dieta equilibrada</li>
+            </ul>
+          </li>
+          <li>
+            Ocio
+            <ul>
+              <li>Leer un libro</li>
+              <li>Explorar una actividad creativa como pintar o escribir</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
 
-		<section id="objetivos">
-			<h2>Objetivos de la Semana</h2>
-			<ol>
-				<li>Estudio
-					<ul>
-						<li>Repasar HTML y CSS</li>
-						<li>Completar ejercicios prácticos</li>
-					</ul>
-				</li>
-				<li>Salud
-					<ul>
-						<li>Realizar 30 minutos diarios de práctica</li>
-						<li>Seguir una dieta equilibrada</li>
-					</ul>
-				</li>
-				<li>Ocio
-					<ul>
-						<li>Leer un libro</li>
-						<li>Explorar una actividad creativa como pintar o escribir</li>
-					</ul>
-				</li>
-			</ol>
-		</section>
+      <section id="tareas">
+        <h2>Tareas Diarias</h2>
+        <p>
+          Divide tus tareas en simples pasos para garantizar que las completes
+          sin problemas:
+        </p>
+        <ul>
+          <li>Preparar materiales para el estudio</li>
+          <li>Planificar tus comidas para la semana</li>
+          <li>Reservar tiempo para actividades de relajación</li>
+        </ul>
+      </section>
 
-		<section id="tareas">
-			<h2>Tareas Diarias</h2>
-			<p>Divide tus tareas en simples pasos para garantizar que las completes sin problemas:</p>
-			<ul>
-				<li>Preparar materiales para el estudio</li>
-				<li>Planificar tus comidas para la semana</li>
-				<li>Reservar tiempo para actividades de relajación</li>
-			</ul>
-		</section>
+      <section id="horarios">
+        <h2>Horario Semanal</h2>
+        <table>
+          <tr>
+            <th>Hora</th>
+            <th>Actividad</th>
+            <th>Imagen</th>
+          </tr>
+          <tr>
+            <td>8:00 - 10:00</td>
+            <td>Estudio</td>
+            <td><img src="Estudio.png" alt="Icono de estudio" /></td>
+          </tr>
+          <tr>
+            <td>10:00 - 12:00</td>
+            <td>Ejercicio</td>
+            <td><img src="Ejercicio.png" alt="Icono de ejercicio" /></td>
+          </tr>
+          <tr>
+            <td>14:00 - 16:00</td>
+            <td>Proyectos</td>
+            <td><img src="Proyectos.png" alt="Icono de proyectos" /></td>
+          </tr>
+          <tr>
+            <td>16:00 - 18:00</td>
+            <td>Tiempo libre</td>
+            <td><img src="Ocio.png" alt="Icono de ocio" /></td>
+          </tr>
+        </table>
+      </section>
+    </main>
 
-		<section id="horarios">
-			<h2>Horario Semanal</h2>
-			<table>
-				<tr>
-					<th>Hora</th>
-					<th>Actividad</th>
-					<th>Imagen</th>
-				</tr>
-				<tr>
-					<td>8:00 - 10:00</td>
-					<td>Estudio</td>
-					<td><img src="Estudio.png" alt="Icono de estudio"></td>
-				</tr>
-				<tr>
-					<td>10:00 - 12:00</td>
-					<td>Ejercicio</td>
-					<td><img src="Ejercicio.png" alt="Icono de ejercicio"></td>
-				</tr>
-				<tr>
-					<td>14:00 - 16:00</td>
-					<td>Proyectos</td>
-					<td><img src="Proyectos.png" alt="Icono de proyectos"></td>
-				</tr>
-				<tr>
-					<td>16:00 - 18:00</td>
-					<td>Tiempo libre</td>
-					<td><img src="Ocio.png" alt="Icono de ocio"></td>
-				</tr>
-			</table>
-		</section>
-	</main>
-
-	<footer>
-		<p>&copy; 2024 Planificador Personal. Todos los derechos reservados.</p>
-	</footer>
-</body>
-
+    <footer>
+      <p>&copy; 2024 Planificador Personal. Todos los derechos reservados.</p>
+    </footer>
+  </body>
 </html>
