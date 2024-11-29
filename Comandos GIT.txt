@@ -1,0 +1,74 @@
+git init
+Inicializa un nuevo repositorio Git en el directorio actual.
+
+git clone <URL>
+Clona un repositorio remoto a tu máquina local.
+
+git status
+Muestra el estado actual del repositorio (archivos modificados, en staging, etc.).
+
+git add <file>
+Agrega archivos al área de staging (preparándolos para commit).
+
+git commit -m "mensaje"
+Realiza un commit de los cambios en el área de staging con un mensaje.
+
+git branch
+Lista las ramas existentes en el repositorio.
+
+git branch <nombre>
+Crea una nueva rama.
+
+git checkout <branch>
+Cambia a otra rama.
+
+git switch <branch>
+Alternativa moderna a checkout para cambiar de rama.
+
+git merge <branch>
+Fusiona la rama especificada con la rama actual.
+
+git pull
+Descarga y fusiona cambios desde el repositorio remoto.
+
+git push
+Envía los commits locales al repositorio remoto.
+
+git log
+Muestra el historial de commits.
+
+git diff
+Compara los cambios entre el working directory, staging y commits.
+
+git stash
+Guarda temporalmente los cambios no confirmados.
+
+git stash apply
+Recupera los cambios guardados con git stash.
+
+git remote
+Administra los repositorios remotos.
+
+git remote add <nombre> <URL>
+Agrega un repositorio remoto.
+
+git fetch
+Descarga cambios desde el repositorio remoto sin fusionarlos.
+
+git reset <file>
+Elimina un archivo del área de staging.
+
+git reset --hard <commit>
+Restaura todo el repositorio al estado de un commit específico.
+
+git rm <file>
+Elimina un archivo del repositorio y del sistema de archivos.
+
+git tag <nombre>
+Crea una etiqueta para marcar un commit específico.
+
+git revert <commit>
+Crea un nuevo commit que revierte los cambios de un commit específico.
+
+git rebase <branch>
+Reaplica commits en la rama actual sobre otra rama base.
