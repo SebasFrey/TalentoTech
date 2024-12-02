@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertir número a Vocal</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        color: #000;
+      }
+
+      input {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #000;
+        border-radius: 5px;
+        width: 100px;
+        text-align: center;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #000;
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Convertir Número a Vocal</h1>
+    <input type="number" id="numero" min="1" max="5" />
+    <button onclick="convertir()">Convertir</button>
+    <p id="resultado"></p>
+
+    <script>
+      function convertir() {
+        const numero = document.getElementById("numero").value;
+        const resultado = document.getElementById("resultado");
+
+        switch (numero) {
+          case "1":
+            resultado.textContent = "El número 1 corresponde a la vocal: A";
+            break;
+          case "2":
+            resultado.textContent = "El número 2 corresponde a la vocal: E";
+            break;
+          case "3":
+            resultado.textContent = "El número 3 corresponde a la vocal: I";
+            break;
+          case "4":
+            resultado.textContent = "El número 4 corresponde a la vocal: O";
+            break;
+          case "5":
+            resultado.textContent = "El número 5 corresponde a la vocal: U";
+            break;
+          default:
+            resultado.textContent = "Por favor ingrese un número entre 1 y 5.";
+        }
+      }
+    </script>
+  </body>
+</html>

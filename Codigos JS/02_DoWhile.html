@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivina el Número</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        color: #fff;
+      }
+
+      p {
+        font-size: 1.5em;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Adivina el Número Secreto</h1>
+    <script type="text/javascript">
+      let numeroSecreto = 7;
+      let intento;
+
+      do {
+        intento = prompt("Adivina el número entre 1 y 10: ");
+      } while (intento != numeroSecreto);
+
+      document.write("<p>¡Felicidades Ingeniero, sigue así!</p>");
+    </script>
+  </body>
+</html>

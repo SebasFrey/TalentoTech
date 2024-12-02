@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Formulario de Inscripción</h1>
+      <form action="#" method="POST">
+        <!-- Campo de nombre completo -->
+        <label for="nombre">Nombre Completo:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Escribe tu nombre completo"
+          required
+        />
+
+        <!-- Campo de correo electrónico -->
+        <label for="correo">Correo Electrónico:</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          placeholder="ejemplo@email.com"
+          required
+        />
+
+        <!-- Selección de modalidad del curso -->
+        <fieldset>
+          <legend>Modalidad del Curso:</legend>
+          <label for="online">
+            <input
+              type="radio"
+              id="online"
+              name="modalidad"
+              value="online"
+            />Online
+          </label>
+          <label for="presencial">
+            <input
+              type="radio"
+              id="presencial"
+              name="modalidad"
+              value="presencial"
+            />Presencial
+          </label>
+        </fieldset>
+
+        <!-- Selección de temas de interés -->
+        <fieldset>
+          <legend>Temas de Interés:</legend>
+          <label for="frontend">
+            <input
+              type="checkbox"
+              id="frontend"
+              name="temas"
+              value="frontend"
+            />Frontend
+          </label>
+          <label for="backend">
+            <input
+              type="checkbox"
+              id="backend"
+              name="temas"
+              value="backend"
+            />Backend
+          </label>
+          <label for="fullstack">
+            <input
+              type="checkbox"
+              id="fullstack"
+              name="temas"
+              value="fullstack"
+            />Full Stack
+          </label>
+        </fieldset>
+
+        <!-- Selección de curso -->
+        <label for="curso">Selecciona un Curso:</label>
+        <select id="curso" name="curso">
+          <option value="ia">Inteligencia Artificial</option>
+          <option value="programacion">Programación</option>
+          <option value="analisis">Analisis de Datos</option>
+        </select>
+
+        <!-- Campo de mensaje -->
+        <label for="mensaje">Mensaje Adicional:</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="5"
+          placeholder="Escribe cualquier información adicional aquí"
+        ></textarea>
+
+        <!-- Botones de enviar y borrar -->
+        <div class="button-group">
+          <button type="submit">Enviar</button>
+          <button type="reset">Borrar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
